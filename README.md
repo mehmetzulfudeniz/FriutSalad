@@ -25,7 +25,8 @@ A Java/Android game project built with **LibGDX** and a multi-module Gradle arch
 - Separates platform-specific Android code from reusable game logic
 - Uses LibGDX's Android backend and native libraries
 - Includes physics, entity-component-system, AI, controller, font, and lighting dependencies
-- Packages visual and audio/game assets through the Android project
+- Packages game assets through the Android project
+- Keeps generated APK/AAB release artifacts out of source control
 
 ## Build
 
@@ -41,7 +42,7 @@ On Windows:
 .\gradlew.bat android:assembleDebug
 ```
 
-The generated APK is placed in the Android module's build output directory.
+The generated APK is placed in the Android module's build output directory and is intentionally excluded from Git.
 
 ## Portfolio Notes
 
@@ -50,7 +51,6 @@ This repository demonstrates Android game-development fundamentals, Gradle multi
 ## Roadmap
 
 - Modernize Android/Gradle dependencies
-- Remove generated release artifacts from source control
 - Add gameplay screenshots and a short demo GIF
 - Add automated smoke tests for core game logic
 - Document gameplay rules and architecture in more detail
