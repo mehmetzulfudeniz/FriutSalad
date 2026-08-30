@@ -29,6 +29,9 @@ www-test/
 *.iws
 *.iml
 /android/out/
+/android/release/
+*.apk
+*.aab
 com_crashlytics_export_strings.xml
 
 ## Eclipse
